@@ -1,0 +1,31 @@
+[build-system]
+requires = [
+    "setuptools>=68",
+    "wheel",
+    "torch",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diff-gaussian-rasterization"
+version = "0.0.0"
+description = "Differential Gaussian rasterization CUDA extension from GraphDeco/Inria."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "LicenseRef-GraphDeco-License"
+authors = [
+    { name = "GraphDeco / Inria" },
+]
+dependencies = [
+    "torch",
+]
+
+license-files = ["LICENSE.md"]
+
+[project.optional-dependencies]
+splatkit = [
+    "splatkit",
+]
+
+[tool.setuptools]
+packages = ["diff_gaussian_rasterization"]
