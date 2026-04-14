@@ -23,9 +23,6 @@ dependencies = [
 license-files = ["LICENSE.md"]
 
 [project.optional-dependencies]
-splatkit = [
-    "splatkit",
-]
 cu128 = [
     "torch",
 ]
