@@ -205,4 +205,3 @@ class GaussianRasterizer(nn.Module):
             cov3D_precomp,
             raster_settings, 
         )
-
